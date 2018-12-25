@@ -14,7 +14,7 @@ vcpkg_configure_cmake(
 	PREFER_NINJA
 )
 
-file(INSTALL ${SOURCE_PATH}/include DESTINATION ${CURRENT_PACKAGES_DIR}/include)
+file(INSTALL ${SOURCE_PATH}/async_tcp DESTINATION ${CURRENT_PACKAGES_DIR}/include)
 
 file(INSTALL ${SOURCE_PATH}/license.txt DESTINATION ${CURRENT_PACKAGES_DIR}/share/async-tcp RENAME copyright)
 
