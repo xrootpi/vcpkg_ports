@@ -5,8 +5,8 @@ set(SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/async_tcp)
 vcpkg_from_github(
 	OUT_SOURCE_PATH SOURCE_PATH
 	REPO xrootpi/async_tcp
-	REF v0.0.2
-	SHA512 314b4ab114051fd13a450d96c85c7b009e9ef8df59e7cf5b3fae0a9d16fbe3fe2db25600ade263bbe6eb0b911b742aaecece874f7c2628bbe5406293a832ad25
+	REF v0.0.5
+	SHA512 cf9f8bc58c4181bcafbcd26cd9aafb14cc9f79858f734dbd3a836bd46683e65827c34fb10f2be1fc1c30d4544f872f4bc816e3eb7f5e0d641b481ba5070cb644
     )
 
 vcpkg_configure_cmake(
@@ -14,7 +14,7 @@ vcpkg_configure_cmake(
 	PREFER_NINJA
 )
 
-file(INSTALL ${SOURCE_PATH}/include/ DESTINATION ${CURRENT_PACKAGES_DIR}/include/async_tcp)
+file(INSTALL ${SOURCE_PATH}/include/async_tcp/ DESTINATION ${CURRENT_PACKAGES_DIR}/include/async_tcp)
 
 file(INSTALL ${SOURCE_PATH}/license.txt DESTINATION ${CURRENT_PACKAGES_DIR}/share/async-tcp RENAME copyright)
 
