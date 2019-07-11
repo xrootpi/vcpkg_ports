@@ -5,7 +5,7 @@ set(SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/websocket_server)
 vcpkg_from_github(
 	OUT_SOURCE_PATH SOURCE_PATH
 	REPO xrootpi/websocket_server
-	REF v0.0.6
+	REF v0.0.8
 	SHA512 3120f70ef9271d4a84d89d4c6780af54886bef8ea2be08148bd2e686a9a1127fef96ca43e22bf58fe52c2fb1eefa8ce7e40d6806a8eb92d2b8e7a62f5a2f2e8d
     )
 
