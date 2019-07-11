@@ -6,7 +6,7 @@ vcpkg_from_github(
 	OUT_SOURCE_PATH SOURCE_PATH
 	REPO xrootpi/websocket_server
 	REF v0.0.8
-	SHA512 3120f70ef9271d4a84d89d4c6780af54886bef8ea2be08148bd2e686a9a1127fef96ca43e22bf58fe52c2fb1eefa8ce7e40d6806a8eb92d2b8e7a62f5a2f2e8d
+	SHA512 a86d67bb12c15a9f78a47fe5585435dec7f3761ddedf990566f69379e19ccc31d9766ea36ddeef9120eab112c1188f2658aa0b76ab5f8e52435dcf58e2bbce90
     )
 
 vcpkg_configure_cmake( 
