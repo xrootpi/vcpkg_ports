@@ -18,4 +18,7 @@ file(INSTALL ${SOURCE_PATH}/include/websocket_server/ DESTINATION ${CURRENT_PACK
 
 file(INSTALL ${SOURCE_PATH}/license.txt DESTINATION ${CURRENT_PACKAGES_DIR}/share/websocket-server RENAME copyright)
 
+file(INSTALL ${SOURCE_PATH}/websocket-server-config.cmake DESTINATION ${CURRENT_PACKAGES_DIR}/share/websocket-server)
+
 vcpkg_install_cmake()
+vcpkg_test_cmake(PACKAGE_NAME Websocket-server)

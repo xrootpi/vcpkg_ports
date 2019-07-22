@@ -18,4 +18,7 @@ file(INSTALL ${SOURCE_PATH}/include/async_tcp/ DESTINATION ${CURRENT_PACKAGES_DI
 
 file(INSTALL ${SOURCE_PATH}/license.txt DESTINATION ${CURRENT_PACKAGES_DIR}/share/async-tcp RENAME copyright)
 
+file(INSTALL ${SOURCE_PATH}/async-tcp-config.cmake DESTINATION ${CURRENT_PACKAGES_DIR}/share/async-tcp)
+
 vcpkg_install_cmake()
+vcpkg_test_cmake(PACKAGE_NAME Async-tcp)
